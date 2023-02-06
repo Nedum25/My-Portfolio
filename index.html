@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/20c154ad51.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <img src="image/logo.png" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Dev</p>
+                <h1>Hi, I'm <span>Uzim </span><br> Chinedu from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------------------About section---------------------------------------------->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/pic3.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>I am an enthusiastic, self-motivated, reliable, responsable and hardworking person.
+                        I use a creative approach to problem solving and I have experience working as part of a team and
+                        individually.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skill</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Dev</span><br> build user interfcae with <br> HTML, CSS, BOOTSTRAP AND JAVASCRIPT</li>
+                            <li><span>Graphics Design</span><br>Design using <br>Photoshop, CorelDraw & Canvas</li>
+                            <li><span>Data Analysis</span><br>Inferential & Descriptive</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>WEB</span><br>HTML, CSS, BOOTSTRAP AND JAVASCRIPT</li>
+                            <li><span>WORDPRESS DEVELOPER</span><br>E-commerce <br>Landing page</li>
+                            <li><span>Data Analytic</span><br>Reseach Work</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            
+                            <li><span>2023</span><br>Bsc from Alex Ekwueme Federal <br>University Ndufu Alike
+                                Ikwo, Ebonyi State</li>
+                            <li><span>2017</span><br>SSCE from Maranatha Secondary School Mba-Ano, Imo State.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------service section----------------------------------------------->
+    <div class="services" id="service">
+        <div class="container">
+            <h1 class="sub_title">My Service</h1>
+            <div class="service-list">
+                <div>
+
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design identifies the goals of a website or
+                        webpage and promotes accessibility for all potential users.
+                    </p>
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Graphics Design</h2>
+                    <p></p>Graphic design is a craft where professionals create visual content to 
+                      communicate messages. By applying visual hierarchy and page layout techniques,
+                      designers use typography and pictures to meet users specific needs and focus on the logic
+                      of displaying elements in interactive designs, to optimize the user experience.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data Analysis</h2>
+                    <p>  Data analysis is the process of cleaning, changing, and processing raw data and extracting actionable,
+                        relevant information that helps businesses make informed decisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------Portfolio-------------------------------------------->
+    <div id="portfolio" id="portfolio">
+        <div class="ccontainer">
+            <h1 class="sub_titl">My Work</h1>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/work.png" alt="">
+            </div>
+            <div class="work">
+                <img src="image/data.jpeg" alt="">
+            </div>
+            <div class="work">
+                <img src="image/page.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------Contact----------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub_title"> Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>chineduuzim1@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>08062177069</p>
+                    <div class="social-icon">
+                        <a href="https://twitter.com/chineduuzim" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></i></a>
+                        <a href="https://l.instagram.com/?u=http%3A%2F%2Fwww.linkedin.com%2Fin%2Fchinedu-uzim&e=ATOruh87TVzm-OMDiC2yR9bqCnzPrSVysLmZfsI_HHZCMkUMytM7GTywo_hyHxk9FpbHoyiPZqFFDu049rSK0w&s=1"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://www.instagram.com/chinedu_uzim/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></i></a>
+                    </div>
+                    <a href="image/Resume.pdf" class="btn" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input name="Name" type="text" placeholder="Name" required>
+                        <input name="Email" type="email" placeholder="Email" required>
+                        <textarea name="Message" type="text" placeholder="Add messages here"></textarea>
+                        <input class="btn" type="submit"></input>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Thank You For visiting</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
